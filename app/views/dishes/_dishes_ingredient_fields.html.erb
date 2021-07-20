@@ -1,0 +1,11 @@
+
+  <div class="field">
+    <%= f.label :ingredient_id %>
+    <%= f.collection_select :ingredient_id, @ingredients, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+    <%# <%= link_to_remove_association "remove task", f %>
